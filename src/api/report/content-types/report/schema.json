@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reports",
+  "info": {
+    "singularName": "report",
+    "pluralName": "reports",
+    "displayName": "Reports"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Text": {
+      "type": "text",
+      "minLength": 1000,
+      "required": true
+    },
+    "Summarized_Text": {
+      "type": "text",
+      "maxLength": 500,
+      "required": true
+    }
+  }
+}
