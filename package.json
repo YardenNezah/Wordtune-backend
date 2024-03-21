@@ -7,15 +7,16 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "production": "cross-env NODE_ENV=production npm run build"
   },
-  "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.20.5",
-    "@strapi/plugin-users-permissions": "4.20.5",
-    "@strapi/plugin-i18n": "4.20.5",
     "@strapi/plugin-cloud": "4.20.5",
+    "@strapi/plugin-i18n": "4.20.5",
+    "@strapi/plugin-users-permissions": "4.20.5",
+    "@strapi/strapi": "4.20.5",
     "better-sqlite3": "8.6.0",
+    "cross-env": "^7.0.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "5.3.4",
