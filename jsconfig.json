@@ -1,9 +1,13 @@
 {
   "compilerOptions": {
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "module": "commonjs",
+    "moduleResolution": "node",
     "target": "ES2021",
     "checkJs": true,
-    "allowJs": true
+    "allowJs": true,
+    "baseUrl": "./",
+    "paths": {
+      "*": ["node_modules/*"]
+    }
   }
 }
